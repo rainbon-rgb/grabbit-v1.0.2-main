@@ -31,9 +31,10 @@ class QucikscanScreen extends GetWidget<QucikscanController> {
                                 Padding(
                                     padding: getPadding(left: 5, top: 50),
                                     child: CommonImageView(
-                                        imagePath: ImageConstant.img11,
-                                        height: getVerticalSize(236.00),
-                                        width: getHorizontalSize(320.00))),
+                                        imagePath:
+                                            ImageConstant.imgRectangle2362,
+                                        height: getVerticalSize(281.00),
+                                        width: getHorizontalSize(325.00))),
                                 Padding(
                                     padding: getPadding(
                                         left: 121,
@@ -62,7 +63,8 @@ class QucikscanScreen extends GetWidget<QucikscanController> {
       imageList = value;
     });
   }
-    onTapBtnNext() {
-      Get.toNamed(AppRoutes.quickRabbitGeneratedInfoScreen);
-    }
+
+  onTapBtnNext() {
+    Get.toNamed(AppRoutes.quickRabbitGeneratedInfoScreen);
   }
+}

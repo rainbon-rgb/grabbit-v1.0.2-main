@@ -76,7 +76,8 @@ class HomepageScreen extends GetWidget<HomepageController> {
                                     shape: ButtonShape.RoundedBorder26,
                                     padding: ButtonPadding.PaddingAll16,
                                     fontStyle:
-                                        ButtonFontStyle.RobotoRomanMedium18),
+                                        ButtonFontStyle.RobotoRomanMedium18,
+                                    onTap: onTapBtnCheckrabbits),
                                 CustomButton(
                                     width: 302,
                                     text: "lbl_sell_a_rabbit2".tr,
@@ -86,7 +87,8 @@ class HomepageScreen extends GetWidget<HomepageController> {
                                     shape: ButtonShape.RoundedBorder26,
                                     padding: ButtonPadding.PaddingAll16,
                                     fontStyle:
-                                        ButtonFontStyle.RobotoRomanMedium18)
+                                        ButtonFontStyle.RobotoRomanMedium18,
+                                    onTap: onTapBtnSellarabbit2)
                               ]))
                     ]))))));
   }
@@ -97,5 +99,13 @@ class HomepageScreen extends GetWidget<HomepageController> {
 
   onTapImgScanarabbitb() {
     Get.toNamed(AppRoutes.qucikscanScreen);
+  }
+
+  onTapBtnCheckrabbits() {
+    Get.toNamed(AppRoutes.checkRabbitsScreen);
+  }
+
+  onTapBtnSellarabbit2() {
+    Get.toNamed(AppRoutes.sellARabbitScreen);
   }
 }
